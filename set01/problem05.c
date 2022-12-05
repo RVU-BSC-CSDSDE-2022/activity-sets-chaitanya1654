@@ -1,4 +1,4 @@
-gcc#include <stdio.h>
+#include <stdio.h>
 int input();
 int compare(int a, int b, int c);
 void output(int a, int b, int c, int largest);
@@ -17,22 +17,21 @@ int input(){
   int x;
   printf("Enter a number\n");
   scanf("%d",&x);
-  return(x);  
+  return 0;  
 }
 
-int compare(int a,int b,int c){
-    if(a>b)
-    {
-      if(a>c){return (a);}
-      else{return (c);}
-    }
-    else
+int compare(int a,int b,int c)
 {
-     if(b>c){return (b);}
-     else{return (c);}
-    }
+ int largest
+  if ((a>b)&&(a>c))
+   largest=a;
+  if ((b<a)&&(b<c))
+    largest=b;
+  if ((c,a)&&(c>b))
+    largest=c;
 }
 
-void output(int a, int b, int c, int largest){
+void output(int a, int b, int c, int largest)
+{
   printf("the largest of %d,%d and %d is %d" ,a,b,c,largest); 
 }
