@@ -29,6 +29,7 @@ void compare(int a,int b,int c,int *largest)
     *largest=b;
    if ((c,a)&&(c>b))
     *largest=c;
+  return 0;
 }
 
 

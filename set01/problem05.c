@@ -23,12 +23,13 @@ int input(){
 int compare(int a,int b,int c)
 {
  int largest
-  if ((a>b)&&(a>c))
+  if((a>b)&&(a>c))
    largest=a;
-  if ((b<a)&&(b<c))
+  if((b<a)&&(b<c))
     largest=b;
-  if ((c,a)&&(c>b))
+  if((c,a)&&(c>b))
     largest=c;
+  return 0;
 }
 
 void output(int a, int b, int c, int largest)

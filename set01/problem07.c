@@ -8,19 +8,27 @@ int main () {
   n = input_n();
   sum = sum_n_nos(n);
   output(n,sum);
+  return 0;
 }
 
 int input_n(){
-  int x;
-  printf("Enter the number\n");
-  scanf("%d", &x);
-  return(x);
+  int n;
+  printf("Enter the nature numbe to add\n");
+  scanf("%d", &n);
+  return(n);
 }
 
-int sum_n_nos(int n){
-  n = (n*(n+1))/2;
-  return (n);
+int sum_n_nos(int n)
+{
+  int sum=0;
+  for(int i=1; i<=n; i++)
+    {
+      sum=sum+i;
+    }
+  return sum;
 }
-void output(int n, int sum){
-  printf("the sum of %d natural number is %d",n,sum);
+
+void output(int n, int sum)
+{
+  printf("The sum of %d natural number is %d\n",n,sum);
 }
