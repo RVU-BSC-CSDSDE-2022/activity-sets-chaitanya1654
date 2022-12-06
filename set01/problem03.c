@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 int sum_func(int a, int b, int sum);
 
