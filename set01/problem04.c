@@ -1,18 +1,20 @@
 #include <stdio.h>
-void change(int *x, int*y,int *sum);
+int input();
+void add(int a, int b, int *sum);
+void output(int a, int b, int sum);
 
 int main()
 {
-  int x,y,sum;
+  int a,b,sum;
   printf("Enter a first number");
-  scanf("%d",&x);
+  scanf("%d",&a);
   printf("Enter a second number");
-  scanf("%d",&y);
+  scanf("%d",&b);
   return 0;
   }
 
-void change(int *x, int *y,int *sum);
+void change(int *a, int *b,int *sum);
 {
-  sum=x+y
+  sum=a+b
     return*sum;
   }

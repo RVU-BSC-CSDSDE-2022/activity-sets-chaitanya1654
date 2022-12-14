@@ -4,7 +4,7 @@ double input();
 double square_root(double n);
 void output(double n, double sqrroot);
 
-int main() {
+int main(){
   double n = input();
   double sq = square_root(n);
   output(n,sq);
@@ -13,16 +13,21 @@ int main() {
 double input(){
   double a;
   printf("Enter a number");
-  scanf("%lf",&a);
+  scanf("%lf", &a);
   return(a);
 }
 
 double square_root(double n){
-  double x;
-  x = sqrt(n);
+  float x,y;
+  x = sqrt(n);//babylonian 
+  float x = n;
+    float y = 1;
+    while (x - y ) {
+        x = (x + y) / 2;
+      y = n / x;}
   return(x);
 }
 
-void output(double n,double sqrroot){
-  printf("square root of %2.2lf is %2.4lf",n,sqrroot);
+void output(double n, double sqrroot){
+  printf("sqare root of %.2lf is %.2lf",n,sqrroot);
 }
