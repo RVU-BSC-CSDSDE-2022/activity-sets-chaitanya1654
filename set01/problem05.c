@@ -3,7 +3,8 @@ int input();
 int compare(int a, int b, int c);
 void output(int a, int b, int c, int largest);
 
-int main(){
+int main()
+{
   int a,b,c,l;
   a = input();
   b = input();
@@ -13,7 +14,8 @@ int main(){
   
 }
 
-int input(){
+int input()
+{
   int x;
   printf("Enter a number\n");
   scanf("%d",&x);

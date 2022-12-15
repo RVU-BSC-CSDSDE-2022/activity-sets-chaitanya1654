@@ -11,10 +11,10 @@ int main()
   printf("Enter a second number");
   scanf("%d",&b);
   return 0;
-  }
+}
 
 void change(int *a, int *b,int *sum);
 {
   sum=a+b
     return*sum;
-  }
+}

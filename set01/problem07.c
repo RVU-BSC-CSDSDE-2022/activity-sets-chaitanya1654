@@ -3,7 +3,8 @@ int input_n();
 int sum_n_nos(int n);
 void output(int n,int sum);
 
-int main () {
+int main ()
+{
   int n,sum;
   n = input_n();
   sum = sum_n_nos(n);
@@ -11,7 +12,8 @@ int main () {
   return 0;
 }
 
-int input_n(){
+int input_n()
+{
   int n;
   printf("Enter the nature numbe to add\n");
   scanf("%d", &n);

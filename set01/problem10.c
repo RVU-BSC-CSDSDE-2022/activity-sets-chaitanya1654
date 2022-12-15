@@ -14,6 +14,7 @@ int main()
     output(string1, string2, result);
      return 0;
 }
+
 void input_two_strings(char *string1, char *string2)
 {
   printf("Enter the first string\n");
@@ -22,9 +23,8 @@ void input_two_strings(char *string1, char *string2)
   scanf("%s", string2);
 }
 
-}
-
-void output(char *string1,char *string2,int result){
+void output(char *string1,char *string2,int result)
+{
   if(result ==10)
   {printf("Both words are equal");}
   else{
